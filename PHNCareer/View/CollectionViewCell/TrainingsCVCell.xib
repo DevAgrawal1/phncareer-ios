@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrainingsCVCell" id="gTV-IL-0wX" customClass="TrainingsCVCell" customModule="PHNCareer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="388"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="603" height="388"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyImg" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-ia-ujC">
+                        <rect key="frame" x="0.0" y="0.0" width="603" height="388"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Desiginer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP3-hd-6BW">
+                        <rect key="frame" x="468" y="15" width="120" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Kgc-w1-Uwj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trainings" translatesAutoresizingMaskIntoConstraints="NO" id="E4i-xM-dK3">
+                        <rect key="frame" x="468" y="70" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="29t-eE-dpL"/>
+                            <constraint firstAttribute="width" constant="15" id="Jj9-l0-eKW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Veu-ex-RC2">
+                        <rect key="frame" x="493" y="69" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="useFontLineHeight" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="rP3-hd-6BW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="7gc-2r-dAl"/>
+                <constraint firstAttribute="trailing" secondItem="Veu-ex-RC2" secondAttribute="trailing" constant="10" id="AQt-rX-0st"/>
+                <constraint firstAttribute="bottom" secondItem="uuA-ia-ujC" secondAttribute="bottom" id="Clz-mX-OuV"/>
+                <constraint firstItem="uuA-ia-ujC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ElF-mK-S6A"/>
+                <constraint firstItem="Veu-ex-RC2" firstAttribute="top" secondItem="rP3-hd-6BW" secondAttribute="bottom" constant="6" id="K4U-6t-tEC"/>
+                <constraint firstItem="E4i-xM-dK3" firstAttribute="leading" secondItem="rP3-hd-6BW" secondAttribute="leading" id="MW9-kQ-Uk2"/>
+                <constraint firstItem="Veu-ex-RC2" firstAttribute="leading" secondItem="E4i-xM-dK3" secondAttribute="trailing" constant="10" id="c29-ep-t4D"/>
+                <constraint firstItem="uuA-ia-ujC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="j8V-IK-VMg"/>
+                <constraint firstItem="E4i-xM-dK3" firstAttribute="top" secondItem="rP3-hd-6BW" secondAttribute="bottom" constant="7" id="jhO-0W-2p2"/>
+                <constraint firstAttribute="trailing" secondItem="rP3-hd-6BW" secondAttribute="trailing" constant="15" id="oRe-BE-xOt"/>
+                <constraint firstAttribute="trailing" secondItem="uuA-ia-ujC" secondAttribute="trailing" id="toA-r7-VIx"/>
+            </constraints>
+            <size key="customSize" width="603" height="388"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="lblNumberOfLessons" destination="Veu-ex-RC2" id="SAF-Mc-uBG"/>
+                <outlet property="lblTitleOfTraining" destination="rP3-hd-6BW" id="X6l-pk-uEd"/>
+                <outlet property="trainingImageView" destination="uuA-ia-ujC" id="ntf-jH-jsj"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="35"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Trainings" width="64" height="64"/>
+        <image name="dummyImg" width="1140" height="696"/>
+    </resources>
+</document>
